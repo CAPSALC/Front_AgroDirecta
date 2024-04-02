@@ -1,1 +1,33 @@
-<p>index works!</p>
+<div class="header">
+    <div class="busqueda">
+            <input type="text" class="barra-de-busqueda" placeholder="Buscar...">
+            <button class="boton-de-busqueda"> <img class="imagen_busqueda" src="./assets/images/buscar_icono.png"> </button>
+    </div>
+        <div class="butons">
+            <div class="dropdown">
+                <button class="dropbtn">Menú</button>
+                <div class="dropdown-content">
+                    <a href="#">Usuario</a>
+                    <a href="#">Configuracion</a>
+                    @if(usuario=="Rodolfo"){
+                        <a href="#">Cerrar sesion</a>
+                    }
+                @else {
+                    <a href="#">Iniciar sesion</a>
+                }
+                
+                </div>
+            </div>
+            <div class="carrito">
+                <button class="boton_carrito"><img class="imagen_carrito" src="./assets/images/carrito_icono.png"></button>
+            </div>
+        </div>
+</div>
+<div class="card" style="width: 18rem;">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
